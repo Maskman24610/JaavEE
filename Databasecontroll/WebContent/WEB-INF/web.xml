@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" metadata-complete="true" version="3.1">
+  <servlet>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>org.dbc.controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>dbcontrol</servlet-name>
+    <servlet-class>org.dbc.dbcontrol</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dbcontrol</servlet-name>
+    <url-pattern>/dbcontrol</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>edit</servlet-name>
+    <servlet-class>org.dbc.edit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>edit</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <description>檔案上傳目錄</description>
+    <param-name>upload-path</param-name>
+    <param-value>C:\Users\Joseph\workspace\Databasecontroll\WebContent\upload</param-value>
+  </context-param>
+</web-app>

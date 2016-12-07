@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
+	<title>Edit資料</title>
+</head>
+<body>
+	<form action="http://localhost:8080/Databasecontroll/controller">
+		<input type='hidden' name='updateid' value='%s'>
+		姓名:<input type='text' name='姓名' value='%s'><br />
+		地址:<textarea row='1' colume='100' name='地址' value='%s'></textarea><br />
+		Hobby:<input type='text' name='hobby' value='%s'><br />
+		Password:<input type='password' name='passwd' value='%s'> <br />
+		<input type='submit' name='type' value='edit'>
+	</form>
+</body>
+</html>
