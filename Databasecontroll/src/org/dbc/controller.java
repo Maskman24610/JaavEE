@@ -102,8 +102,8 @@ public class controller extends HttpServlet {
  		  pw.print(String.format("<td><a href=?deleteid=%s  onclick=' return isDelete(\"%s\")'>Delete</a>"
 				   ,row.get(fields[0]),row.get(fields[1])));
  	     pw.print(String.format("<td><a href='edit?editid=%s'>Edit</a>"
- 	    		 ,row.get(fields[0])));
- 	   }
+ 	    		 ,row.get(fields[0]))); 
+       }
  	   pw.print("</table>");
     }
 }
